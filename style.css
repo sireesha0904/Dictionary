@@ -9,31 +9,38 @@
 body {
     background-image: linear-gradient(to right top, #103873, #00537a, #00686d, #457861, #7a8464);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
     background-color: #ffffff;
     width: 90vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 80px 50px;
+    position: relative;
+    padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
     transition: all 0.3s ease-in-out;
 }
 .container:hover {
     box-shadow: 0 40px 80px rgba(38, 33, 61, 0.4);
-    transform: translate(-50%, -45%);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #342575;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 .search-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: #011020;
 }
 .search-box input {
-    padding: 5px;
+    padding: 10px;
     width: 70%;
     border: none;
     outline: none;
@@ -45,7 +52,7 @@ body {
     border-bottom-width: 4px;
 }
 .search-box button {
-    padding: 15px 0;
+    padding: 10px 0;
     width: 25%;
     background-color: #342575;
     border: none;
@@ -53,6 +60,12 @@ body {
     color: #ffffff;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box button i {
+    margin-right: 5px; /* Space between icon and text */
 }
 .search-box button:hover {
     background-color: #453f70;
@@ -60,6 +73,7 @@ body {
 }
 .result {
     position: relative;
+    margin-top: 20px;
 }
 .result h3 {
     font-size: 30px;
@@ -72,19 +86,7 @@ body {
 .result .word {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    transition: all 0.2s ease-in-out;
-}
-.result button {
-    background-color: transparent;
-    color: #ae9cff;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    transition: all 0.2s ease-in-out;
-}
-.result:hover button {
-    color: #1f194c;
+    margin-top: 20px;
 }
 .result .details {
     display: flex;
@@ -92,31 +94,28 @@ body {
     color: #b3b6d4;
     margin: 5px 0 20px 0;
     font-size: 14px;
-    transition: all 0.2s ease-in-out;
 }
 .word-meaning {
     color: #575a7b;
-    transition: all 0.2s ease-in-out;
 }
 .word-example {
     color: #575a7b;
     font-style: italic;
     border-left: 5px solid #ae9cff;
     padding-left: 20px;
-    margin-top: 30px;
-    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
 }
 .error {
-    margin-top: 80px;
+    margin-top: 20px;
     text-align: center;
-    transition: all 0.2s ease-in-out;
-}
-.error:hover {
-    color: #1f194c;
+    color: #e63946;
 }
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 40px 20px; 
+        padding: 20px 15px; 
+    }
+    h1 {
+        font-size: 2rem; 
     }
     .search-box input {
         font-size: 14px; 
@@ -128,10 +127,7 @@ body {
         font-size: 20px; 
     }
     .result .word {
-        margin-top: 30px; 
-    }
-    .result button {
-        font-size: 14px; 
+        margin-top: 10px; 
     }
     .result .details {
         font-size: 12px; 
@@ -139,16 +135,7 @@ body {
     .word-example {
         margin-top: 15px; 
     }
-    .result:hover h3 {
-        color: #1f194c;
-    }
-    .result:hover button {
-        color: #1f194c;
-    }
     .error {
-        margin-top: 30px; 
-    }
-    .error:hover {
-        color: #1f194c;
+        margin-top: 15px; 
     }
 }
