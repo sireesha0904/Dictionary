@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
-
     <title>Dictionary</title>
 </head>
+
 <body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-book-open"></i> Dictionary</h1>
+            <p>Quickly find word meanings and definitions.</p>
+        </div>
+    </header>
+
     <div class="container">
-        <h1><i class="fas fa-book-open"></i> Dictionary</h1>
         <div class="search-box">
-            <input
-                type="text"
-                placeholder="Type the word here.."
-                id="inp-word"
-            />
-            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            <input type="text" placeholder="Type the word here..." id="inp-word" class="search-input" />
+            <button id="search-btn" class="search-button"><i class="fas fa-search"></i> Search</button>
         </div>
         <div class="result" id="result"></div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="features">
+                <a href="https://x.com/_sireeshamodi_?t=eYo7MiYv016liFGqS3AEYw&s=09" class="footer-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/sireesha0904" class="footer-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/modi-sireesha-63ba47279/" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 Modi Sireesha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
